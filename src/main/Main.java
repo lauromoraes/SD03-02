@@ -101,7 +101,7 @@ public class Main {
 		System.out.println("Main");
 		Main m = new Main();
 		String[] fPath = {"teste_1G", "input.bin", "input2.bin"};
-		Integer mod = (int)(Math.pow(10.0, 1.0));
+		Integer mod = (int)(Math.pow(10.0, 7.0));
 		
 		String coordAddress = "200.239.133.35:6969";
 		
