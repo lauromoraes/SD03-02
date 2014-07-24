@@ -105,7 +105,22 @@ public class Main {
 		
 		String coordAddress = "200.239.133.35:6969";
 		
-		m.hostApp(fPath[2], mod, coordAddress);
+//		m.hostApp(fPath[2], mod, coordAddress);
+//		m.coordApp();
+		switch (args[0]) {
+		case "0":
+			m.coordApp();
+			break;
+		case "1":
+			m.hostApp(args[2], mod, args[1]);
+			break;
+		case "3":
+			m.hostApp(fPath[Integer.parseInt(args[1])], mod, coordAddress);
+			break;
+
+		default:
+			break;
+		}
 		
 		System.out.println("END with: " + ((double)(System.currentTimeMillis() - t0)/1000) + "s");
 		
